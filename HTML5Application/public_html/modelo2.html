@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Modelo de Site</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+        <meta name="description" content="Um site de exemplo">
+        <style>
+        body{
+                font-family: Arial, sans-serif;
+                background-color: #f0f0f5; 
+                margin: 0px;
+                padding:0px;
+                
+            }
+                header{
+                   background-color: #333;
+                   color: white;
+                   text-align: center;
+                   padding: 20px;
+                
+            }    
+            .titulo-principal{
+                color: white;
+                font-size: 2em;
+                margin: 0;
+                
+            }
+            nav ul{
+                list-style: none;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                
+            }
+           nav ul li a {
+    color: white;
+    text-decoration: none; 
+    padding: 10px 15px; 
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #444; 
+    cursor: pointer; 
+}
+               
+                
+            
+            nav ul li a{
+                color: white;
+            }
+            section{
+                padding: 10px;
+                margin: 10px auto;
+                width: 80%;
+                max-width: 800px;
+                background-color: #ffffff;
+                border-radius: 10px;
+                box-shadow: 0px 0px 10px rgba(0,0,0, 0.1);
+            }
+            #sobre{
+            background-color:whitesmoke;
+            color: white;
+            
+            }
+            
+            h2{
+                color: #555;
+                font-size: 1.6em;
+                border-bottom: 2px solid #ddd;
+                padding-bottom: 5px;
+                margin-bottom: 15px;
+                
+                
+                
+            }
+            p{
+                color: black;
+                line-height: 1.6;
+                margin: 10px 0;
+                
+                
+            }
+            ul{
+                list-style-type: inherit;
+                padding-left: 20px;
+                
+            }
+            li{
+                padding: 5px 0;
+            }
+            form{
+                display: grid;
+                grid-template-columns: 1fr; 
+                gap: 10px;
+            }
+            label{
+                font-weight: bold;
+                
+            }
+            input, textarea, option{
+                width: 100%;
+                padding: 8px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                
+            }
+            button{
+                background-color: #4CAF50;
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                border-radius:5px;
+                font-size: 1em;
+                cursor:pointer;
+            }
+            button:hover{
+                background-color: #45a049;
+            }
+            footer{
+                background-color: #333;
+                color: white;
+                text-align: center;
+                padding: 15px;
+                font-size: 0.9em;
+                margin-top: 20px;
+            }
+            .noticias {
+    list-style-type: none;
+    padding: 0;
+}
+
+.noticias li {
+    margin: 5px 0;
+}
+
+.noticias a {
+    color: orange; 
+    text-decoration: none; 
+}
+
+.noticias a:hover {
+    text-decoration: underline; 
+}
+.sobre{
+    text-align: justify;
+}
+  .sombra {
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+        }        
+        .equipe {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.cartoes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.cartao {
+    
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    padding: 20px;
+    text-align: left;
+    margin:0px;
+}
+
+
+
+.funcao {
+    font-weight: bold;
+    color: #555;
+}
+
+.descricao {
+    color: #777;
+    margin-top: 10px;
+}
+.cartoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    
+}
+.equipe{
+    margin: 10px auto;
+}
+html {
+    scroll-behavior: smooth;
+}
+.insta{
+    color: white;
+}
+.email{
+    color: white;
+}
+        </style>
+        <span id='topo'></span>
+    </head>
+    <body>
+        <div></div>
+        <!-- Cabeçalho do site -->
+        
+        <header id="topo">
+        <h1 class="titulo-principal">Bem vindo ao meu site!</h1>
+        <nav> <ul class="menu-navegacao">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="https://www.senacrs.com.br/" target="_blank">Senac</a></li>
+            </ul>
+        </nav>
+        </header>
+        <section id="sobre"> 
+            <h2 style="display: inline;">Sobre mim</h2>
+            
+            <img src="imagens/foto1.jpeg" width="150" height="80" alt="imagem1" style="margin-left: 10px;" class="sombra">
+
+           <p>Eu sou o Gabriel Provin, e estou 
+                aprendendo HTML.</p>
+        </section>
+        <section id="servicos">
+        <h2>Meus serviços</h2>
+        
+        <ul>
+            <li>Desenvolvedor de sites</li>
+            <li>Programador JS</li>
+            <li>Alguma outra coisa</li>
+            
+        </ul>
+        <h3>Últimas Notícias</h3>
+    <ul class="noticias">
+        <li>
+            <a href="link.html">novo site</a> -Publicada em 25/10/2024
+        </li>
+        <li>
+            <a href="link.html">programação em JavaScript</a> - Publicada em 25/10/2024
+        </li>
+        <li>
+            <a href="link.html">novo sistema em JS</a> - Publicada em 25/10/2024
+        </li>
+    </ul>
+          <div id="testemunhos">
+        <h3>Testemunhos</h3>
+        <div class="carrossel">
+            <div class="depoimento ativo">
+                <p> Recomendo a todos!</p>
+                <p> Cliente 1</p>
+            </div>
+            <div class="depoimento">
+                <p>O serviço foi excepcional!</p>
+                <p>Cliente 2</p>
+            </div>
+            <div class="depoimento">
+                <p>Atendimento impecável!</p>
+                <p> Cliente 3</p>
+            </div>
+        </div>
+        <button id="prev">Anterior</button>
+        <button id="next">Próximo</button>
+    </div>
+</section>
+<section class="equipe">
+        <h2>Conheça nossa Equipe</h2>
+        <div class="cartoes">
+            <div class="cartao">
+                
+                <h3>Gabriel Provin</h3> 
+                
+                <p class="funcao">Desenvolvedor Frontend</p>
+                <p class="descricao">Gabriel.</p>
+            </div>
+            <div class="cartao">
+               
+                <h3>Hercio neto</h3>
+                <p class="funcao">Desenvolvedor full-Stacker</p>
+                <p class="descricao">hercio neto</p>
+            </div>
+            <div class="cartao">
+               
+                <h3>Gabrieli</h3>
+                <p class="funcao">Desenvolvedora Js</p>
+                <p class="descricao">gabrielli.</p>
+            </div>
+        </div>
+    </section>
+        <!--seção de hobbies-->
+      
+             <section id="hobbies">
+          <h3>Esses são alguns dos meus hobbies:</h3>
+       <ul>
+            <li><strong>Programação</strong></li>
+            <p>Gosto muito de Programação</p>
+            <li><strong>Jogar Futebol com amigos</strong></li>
+            <p>Nos finais de semana jogo futebol com os amigos</p>  
+            <li><strong>Assistir o Grêmio</strong></li>     
+            <p>Sou torcedor do Grêmio</p>
+       
+       <li><a href="galeria.html">Galeria de Imagens</a></li>
+       </ul>
+          
+          </section>
+        
+        <!-- seção de Contato-->
+        <section id="contato"> 
+            <h2>Contato</h2>
+            <form action="" method="post">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" required><br>
+                    <br><label for="email">Email</label>
+                <input type="text" id="email" name="email" required>    <br>
+                 <label for="servico">Serviço</label>
+                 <select name="servico">
+                 <option value="">Escolha um serviço</option>
+                 <option value="dSites">Desenvolvimento de sites</option>
+                <option value="consultoria">Consultoria</option>
+                <option value="programacao">Programador JS</option>
+                 </select>
+                   <br> <label for="msg">Mensagem</label>
+                   <br> <textarea id="msg" name="msg" rows="4" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>        
+        </section>
+
+    <section class="comentarios">
+        <h2>Comentários</h2>
+        <form action="" method="post">
+            <label for="nome_comentario">Nome</label>
+            <input type="text" id="nome_comentario" name="nome_comentario" required>
+            <label for="comentario">Comentário</label>
+            <textarea id="comentario" name="comentario" rows="4" required></textarea>
+            <button type="submit">Enviar Comentário</button>
+        </form>
+<div class="comentario">
+            <strong>Hercio Neto:</strong> Adorei o site! Muito bem feito!
+        </div>
+     
+        <br>
+        <label>Avaliação</label>
+<div>
+    <input type="radio" id="estrela1" name="avaliacao" value="1">
+    <label for="estrela1">★</label>
+    <input type="radio" id="estrela2" name="avaliacao" value="2">
+    <label for="estrela2">★★</label>
+    <input type="radio" id="estrela3" name="avaliacao" value="3">
+    <label for="estrela3">★★★</label>
+    <input type="radio" id="estrela4" name="avaliacao" value="4">
+    <label for="estrela4">★★★★</label>
+    <input type="radio" id="estrela5" name="avaliacao" value="5">
+    <label for="estrela5">★★★★★</label>
+</div>
+
+        
+        
+    </section>
+       
+        <!---Rodapé-->
+        <footer id="email">
+            <p>Meu email:<a href="gabrielpnoval@gmail.com" class='email'>gabrielpnoval@gmail.com</a></p>
+            
+            
+            <p>&copy; 2024 Meu Primeiro Site. Desenvolvido por Gabriel <br>
+       
+              <h2 style="display: inline;" class='insta'>@_gabrielprovin</h2>
+            
+            <img src="imagens/icone.png" width="40" height="40" alt="imagem1" style="margin-left: 10px;">
+ <section id="politica-privacidade">
+    <h2>Política de Privacidade</h2>
+    <p>política de privacidade.</p>
+</section>
+<section id="termos-uso">
+    <h2>Termos de Uso</h2>
+    <p>termos de uso.</p>
+    
+</section>
+ 
+
+        </footer>
+        <a href='#topo'>Voltar ao topo</a>
+    </body>
+</html>
+
+
+
+
+
+
+
+

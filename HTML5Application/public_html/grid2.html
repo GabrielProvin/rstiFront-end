@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Grid CSS</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 2fr; 
+            /* Define duas colunas: uma ocupando 1 fração e outra 2 frações */
+            grid-template-rows: auto auto auto;
+            /* Três linhas automáticas que expandem conforme o conteúdo */
+            gap: 10px; /* Espaçamento entre os itens do grid */
+            padding: 10px;
+        }
+        .item1 {
+            background-color: lightcoral;
+            padding: 20px;
+        }
+        .item2 {
+            background-color: lightblue;
+            padding: 20px;
+        }
+        .item3 {
+            background-color: lightgreen;
+            padding: 20px;
+        }
+        .item4 {
+            background-color: lightgoldenrodyellow;
+            padding: 20px;
+        }
+        .item5 {
+            background-color: lightpink;
+            padding: 20px;
+        }
+        .item6 {
+            background-color: lightgray;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="item1">Item 1</div>
+        <div class="item2">Item 2</div>
+        <div class="item3">Item 3</div>
+        <div class="item4">Item 4</div>
+        <div class="item5">Item 5</div>
+        <div class="item6">Item 6</div>
+    </div>
+</body>
+</html>
+

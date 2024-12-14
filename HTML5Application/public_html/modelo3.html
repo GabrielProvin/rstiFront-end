@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Exemplo de layout com Divs</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+     
+        /* Estilos Globais */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Cabeçalho */
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Barra de Navegação */
+        .nav {
+            background-color: #444;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        /* Layout do Conteúdo Principal */
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        /* Coluna de Conteúdo Principal */
+        .main-content {
+            width: 70%;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Barra Lateral (Sidebar) */
+        .sidebar {
+            width: 25%;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Rodapé */
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin: 20px;
+            
+        }
+            
+            
+        </style>
+    </head>
+<body>
+
+    <!-- Cabeçalho do Site -->
+    <div class="header">
+        <h1>Meu Site com Layout de Divs</h1>
+        <p>Este é um exemplo básico de layout utilizando divs</p>
+    </div>
+
+    <!-- Barra de Navegação -->
+    <div class="nav">
+        <a href=''>Home</a>
+        <a href=''>Sobre</a>
+        <a href=''>Serviços</a>
+        <a href=''>Contato</a>
+    </div>
+
+    <!-- Contêiner do Conteúdo Principal -->
+    <div class="container">
+        
+        <!-- Conteúdo Principal -->
+        <div class="main-content">
+            <h2>Conteúdo Principal</h2>
+            <p>Aqui fica o conteúdo principal da página. Normalmente, esta seção inclui o texto e imagens mais importantes que o usuário vê primeiro.</p>
+            <p>Com o uso de `display: flex`, conseguimos colocar o conteúdo principal ao lado da barra lateral.</p>
+        </div>
+
+        <!-- Barra Lateral (Sidebar) -->
+        <div class="sidebar">
+            <h2>Barra Lateral</h2>
+            <p>Este é um exemplo de barra lateral. Pode conter links, anúncios, ou qualquer outro conteúdo secundário.</p>
+        </div>
+    </div>
+
+    <!-- Rodapé do Site -->
+    <div class="footer">
+        <p>&copy; 2024 Meu Site. Todos os direitos reservados.</p>
+    </div>
+
+</body>
+</html>

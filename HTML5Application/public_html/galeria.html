@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Galeria de Hobbies</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: black;
+            color: whitesmoke;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        table td {
+            padding: 5px;
+            border: 5px solid #ddd;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+
+        }
+        h1 {
+            text-align: center;
+            color: white;
+            font-size: 50px;
+            margin-top: 0;
+        }
+       
+    </style>
+</head>
+<body>
+    <a href="#" class="navbar-brand d-flex align-items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
+        <strong>Album</strong>
+      </a>
+    <h1>Minha Galeria</h1>
+
+    <table>
+        <tr>
+             <td><img src="imagens/foto1.jpeg"></td>
+           
+            <td><img src="imagens/foto7.jpeg" ></td>
+        </tr>
+        <tr>
+            <td><img src="imagens/foto5.jpeg" ></td>
+            
+            <td><img src="imagens/foto6.jpeg"></td>
+        </tr>
+        <tr>
+            <td><img src="imagens/foto2.jpeg" ></td>
+            <td><img src="imagens/foto4.jpeg" ></td>
+       
+        </tr>
+
+    </table>
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="servicos">
+    <h2>Meus serviços</h2>
+    <ul>
+        <li>Desenvolvedor de sites</li>
+        <li>Programador JS</li>
+        <li>Alguma outra coisa</li>
+    </ul>
+    
+    <h3>Últimas Notícias</h3>
+    <ul class="noticias">
+        <li>
+            <a href="link-para-artigo1.html">Lançamento de novo site para clientes</a> - <span>Publicada em 10/10/2024</span>
+        </li>
+        <li>
+            <a href="link-para-artigo2.html">Workshop de programação em JavaScript</a> - <span>Publicada em 05/10/2024</span>
+        </li>
+        <li>
+            <a href="link-para-artigo3.html">Atualizações de segurança para desenvolvedores</a> - <span>Publicada em 01/10/2024</span>
+        </li>
+    </ul>
+</section>
+
+.noticias {
+    list-style-type: none;
+    padding: 0;
+}
+
+.noticias li {
+    margin: 5px 0;
+}
+
+.noticias a {
+    color: #4CAF50; /* Cor para os links de notícias */
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+.noticias a:hover {
+    text-decoration: underline; /* Sublinha ao passar o mouse */
+}

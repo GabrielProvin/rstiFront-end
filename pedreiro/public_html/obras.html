@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        
+        <title>Obras</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+       <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"> 
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+        <script type="text/javascript" href="js/jquery-3.5.1.min.js"></script>
+        <script type="text/javascript" href="js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+                 <style>
+           
+            body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f5;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box; 
+            background-image: url('imagens/imagem10.png');
+            background-size: cover; 
+            background-position: center; 
+        }
+        
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .titulo-principal {
+            color: white;
+            font-size: 2em;
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #444;
+            cursor: pointer;
+        }
+
+        section {
+            padding: 10px;
+            margin: 10px auto;
+            width: 80%;
+            max-width: 800px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #sobre {
+            background-color: whitesmoke;
+            color: white;
+        }
+
+        h2 {
+            color: #555;
+            font-size: 1.6em;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            color: black;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+
+        ul {
+            list-style-type: inherit;
+            padding-left: 20px;
+        }
+
+        li {
+            padding: 5px 0;
+        }
+
+        form {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input, textarea, option {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 0.9em;
+            margin-top: 20px;
+        }
+
+        header img {
+            width: 100%; 
+            max-width: 200px; 
+            border-radius: 15%;
+            margin: 0 auto;
+        }
+
+        .main-content {
+            margin: 0 auto;
+            width: 70%;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .imagemPrincipal {
+            width: 100%; 
+            height: auto;
+            margin: 0 auto;
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin: 20px;
+        }
+
+       
+        @media screen and (max-width: 768px) {
+            .titulo-principal {
+                font-size: 1.5em; 
+            }
+
+            header {
+                padding: 15px;
+            }
+
+            nav ul {
+                flex-direction: column; 
+                align-items: center; 
+            }
+
+            nav ul li {
+                margin: 5px 0;
+            }
+
+            .main-content {
+                width: 90%; 
+                padding: 10px;
+            }
+
+            footer {
+                font-size: 0.8em; 
+            }
+        }
+        .textoInicial{
+            color: white;
+        }
+       
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Meu Site</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="servicos.html">Serviços</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="obras.html">Obras</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contato.html">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+        <h1>Hercio Neto</h1>
+        <p class="textoInicial">O pedreiro é o profissional essencial na execução de diversas etapas de uma obra, desde a fundação até o acabamento. Com habilidades em alvenaria, revestimentos, construção de estruturas e muito mais, ele transforma projetos arquitetônicos em realidade. Seu trabalho envolve precisão, conhecimento técnico e uma visão detalhada, garantindo a segurança e a qualidade da construção.</p>
+        <section class="depoimento">    
+            <p>"Construir não é apenas levantar paredes; é dar vida ao sonho de cada cliente."</p>
+    </section>
+
+    </header>
+        
+        
+        
+      <section class="container my-5" id="servicos">
+    <h2 class="text-center mb-4">🤝Obras🤝</h2>
+    <div class="row">
+        <!--1 -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="imagens/casa4.jpg" class="card-img-top" alt="Serviço 1">
+                <div class="card-body">
+                    <h5 class="card-title">Casa de alto padrão</h5>
+                    <p class="card-text">Casa localizada em São-Paulo - SP</p>
+                    <a href="imagens/casa4.jpg" class="btn btn-primary">Abrir foto</a>
+                </div>
+            </div>
+        </div>
+        
+        <!--2-->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="imagens/casa2.jpg" class="card-img-top" alt="Serviço 2">
+                <div class="card-body">
+                    <h5 class="card-title">Casa de 2 pisos em um condomínio</h5>
+                    <p class="card-text">Mais uma casa de alto padrão.</p>
+                    <a href="imagens/casa2.jpg" class="btn btn-primary">Abrir foto</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Imagem 3 -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="imagens/casa5.jpg" class="card-img-top" alt="Serviço 3">
+                <div class="card-body">
+                    <h5 class="card-title">Minha casa</h5>
+                    <p class="card-text">Foi com bastante suor de mim e da minha equipe que consegui a minha casa, dando um conforto de alta qualidade para minha família.</p>
+                    <a href="imagens/casa5.jpg" class="btn btn-primary">Abrir foto</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Imagem 4 -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="imagens/casa6.jpg" class="card-img-top" alt="Serviço 4">
+                <div class="card-body">
+                    <h5 class="card-title">Casa moderna</h5>
+                    <p class="card-text">Projeto moderno com acabamentos de alto nível.</p>
+                    <a href="imagens/casa6.jpg" class="btn btn-primary">Abrir foto</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Imagem 5 -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="imagens/casa7.webp" class="card-img-top" alt="Serviço 5">
+                <div class="card-body">
+                    <h5 class="card-title">Condomínio fechado</h5>
+                    <p class="card-text">Obra em condomínio fechado de luxo.</p>
+                    <a href="imagens/casa7.webp" class="btn btn-primary">Abrir foto</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Imagem 6 -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="imagens/casa8.jpeg" class="card-img-top" alt="Serviço 6">
+                <div class="card-body">
+                    <h5 class="card-title">Casa com piscina</h5>
+                    <p class="card-text">Residência com área externa e piscina.</p>
+                    <a href="imagens/casa8.jpeg" class="btn btn-primary">Abrir foto</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Imagem 7 -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="imagens/casa9.jpg" class="card-img-top" alt="Serviço 7">
+                <div class="card-body">
+                    <h5 class="card-title">Casa ecológica</h5>
+                    <p class="card-text">Casa projetada com foco em sustentabilidade.</p>
+                    <a href="imagens/casa9.jpg" class="btn btn-primary">Abrir foto</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Imagem 8 -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="imagens/casa10.jpg" class="card-img-top" alt="Serviço 8">
+                <div class="card-body">
+                    <h5 class="card-title">Obra de grande porte</h5>
+                    <p class="card-text">Em breve mais informações👀.</p>
+                    <a href="imagens/casa10.jpg" class="btn btn-primary">Abrir foto</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Imagem 9 -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="imagens/casa11.jpg" class="card-img-top" alt="Serviço 9">
+                <div class="card-body">
+                    <h5 class="card-title">Casa de campo</h5>
+                    <p class="card-text">Casa com design rústico e aconchegante.</p>
+                    <a href="imagens/casa11.jpg" class="btn btn-primary">Abrir foto</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        
+        
+        
+        <footer>
+        <p>&copy; Gabriel Provin 2024. Todos os direitos reservados.</p>
+    </footer>
+    </body>
+</html>

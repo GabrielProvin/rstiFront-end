@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Modelo de Site</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Um site de exemplo">
+        <style>
+            body{
+                font-family: Arial, sans-serif;
+                background-color: #f0f0f5; 
+                margin: 0px;
+                padding:0px;
+                
+            }
+                header{
+                   background-color: #333;
+                   color: white;
+                   text-align: center;
+                   padding: 20px;
+                
+            }    
+            .titulo-principal{
+                color: #ff4444;
+                font-size: 2em;
+                margin: 0;
+                
+            }
+            nav ul{
+                list-style: none;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                
+            }
+            nav ul li{
+                margin: 0 10px;
+                padding: 5px 15px;
+                
+                
+            }
+            nav ul li a:hover{
+                background-color: #444;
+                cursor:pointer;
+                border-radius: 5px;
+                padding: 10px;
+                color:white;
+               
+                
+            }
+            nav ul li a{
+                color: white;
+            }
+            section{
+                padding: 10px;
+                margin: 10px auto;
+                width: 80%;
+                max-width: 800px;
+                background-color: #ffffff;
+                border-radius: 10px;
+                box-shadow: 0px 0px 10px rgba(0,0,0, 0.1);
+            }
+            #sobre{
+            background-color: #ffe4c4;
+            color: #333;
+            }
+            
+            h2{
+                color: #555;
+                font-size: 1.6em;
+                border-bottom: 2px solid #ddd;
+                padding-bottom: 5px;
+                margin-bottom: 15px;
+                
+                
+                
+            }
+            p{
+                line-height: 1.6;
+                margin: 10px 0;
+                
+                
+            }
+            ul{
+                list-style-type: square;
+                padding-left: 20px;
+                
+            }
+            li{
+                padding: 5px 0;
+            }
+            form{
+                display: grid;
+                grid-template-columns: 1fr; 
+                gap: 10px;
+            }
+            label{
+                font-weight: bold;
+                
+            }
+            input, textarea{
+                width: 100%;
+                padding: 8px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                
+            }
+            button{
+                background-color: #4CAF50;
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                border-radius:5px;
+                font-size: 1em;
+                cursor:pointer;
+            }
+            button:hover{
+                background-color: #45a049;
+            }
+            footer{
+                background-color: #333;
+                color: white;
+                text-align: center;
+                padding: 15px;
+                font-size: 0.9em;
+                margin-top: 20px;
+            }
+         </style>
+    </head>
+    <body>
+        <!-- Cabeçalho do site -->
+        <header id="topo">
+            <h1 class="titulo-principal">Bem vindo ao meu site!</h1>
+            <nav>
+                <ul class="menu-navegacao">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#contato">Contato</a></li>
+                    </ul>
+            </nav>
+        </header>
+        
+        <section id="sobre">
+            <h2>Sobre mim</h2>
+            <p>Eu sou o Gabriel Provin, e estou 
+                aprendendo HTML.</p>
+        </section>
+        <section id="servicos">
+            <h2>Meus serviços</h2>
+            <ul>
+                <li>DEsenvolvimento de sites</li>
+                <li>Programador JS</li>
+                <li>Alguma outra coisa</li>
+            </ul>
+        </section>       
+        <!-- Seção de contato -->
+        <section id="contato">
+            <h2>Contato</h2>
+            <form action="" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="msg">Mensagem</label>
+                <textarea id="msg" name="msg" rows="4" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+        
+        <!-- Rodapé do site -->
+        <footer>
+            <p>&copy; 2024 Meu Primeiro Site. Desenvolvido por Gabriel Provin.</p>
+        </footer>        
+    </body>
+</html>

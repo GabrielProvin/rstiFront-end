@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Walking Dead</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .titulo-principal {
+            color: white;
+            font-size: 2em;
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #444;
+            cursor: pointer;
+        }
+
+        section {
+            padding: 10px;
+            margin: 10px auto;
+            width: 80%;
+            max-width: 800px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #555;
+            font-size: 1.6em;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            color: black;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+
+        ul {
+            list-style-type: inherit;
+            padding-left: 20px;
+        }
+
+        li {
+            padding: 5px 0;
+        }
+
+        form {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 0.9em;
+            margin-top: 20px;
+        }
+
+        header img {
+            width: 15%;
+            border-radius: 15%;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .main-content {
+            margin: 0 auto;
+            width: 70%;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .imagemPrincipal {
+            margin: 0 auto;
+            width: 100%;  /* A imagem ocupará toda a largura disponível */
+            height: auto; /* A altura se ajusta para manter a proporção */
+            max-width: 100%; /* A imagem não vai ultrapassar a largura do contêiner */
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin: 20px;
+        }
+
+    </style>
+</head>
+<body background="imagens/imagem10.png">
+
+    <header>
+        <img src="imagens/imagem5.jpg" alt="Logo The Walking Dead">
+        <h1 class="titulo">The Walking Dead</h1>
+        <nav>
+            <ul class="menu-navegacao">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="biografia.html">Biografia</a></li>
+                <li><a href="trabalhos.html">Trabalhos Famosos</a></li>
+                <li><a href="curiosidades.html">Curiosidades</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-content">
+        <img src="imagens/imagem1.jpg" class="imagemPrincipal" alt="Imagem principal">
+        <h2>Conteúdo Principal</h2>
+        <p>The Walking Dead é uma série de televisão americana baseada na série de quadrinhos de mesmo nome, criada por Robert Kirkman, Tony Moore e Charlie Adlard. A série estreou em 2010 e rapidamente se tornou um fenômeno cultural, atraindo milhões de espectadores ao redor do mundo.</p>
+
+        <h3><strong>História de Criação</strong></h3>
+        <p>A ideia original para The Walking Dead surgiu do desejo de explorar o que significa ser humano em uma situação extrema, como um apocalipse zumbi. Robert Kirkman, o criador dos quadrinhos, queria focar não apenas nos zumbis, mas também nas interações e dinâmicas entre os sobreviventes. A série de quadrinhos foi lançada pela Image Comics em 2003 e se destacou por sua abordagem emocional e personagens complexos.</p>
+
+        <h3><strong>Produção</strong></h3>
+        <p>A adaptação para a televisão foi desenvolvida por Frank Darabont, um cineasta conhecido por filmes como Um Sonho de Liberdade e À Espera de um Milagre. Ele escreveu e dirigiu o piloto, que foi bem recebido e ajudou a estabelecer o tom sombrio e emocional da série. Darabont foi o showrunner nas primeiras temporadas, mas deixou a série após a segunda temporada, em meio a disputas com a produção.</p>
+
+        <h3><strong>Principais Atores</strong></h3>
+        <p>O elenco principal inclui:</p>
+        <ul>
+            <li>Andrew Lincoln como Rick Grimes, o protagonista e ex-xerife que se torna o líder do grupo de sobreviventes.</li>
+            <li>Norman Reedus como Daryl Dixon, um caçador habilidoso que se torna um dos personagens mais amados da série.</li>
+            <li>Sarah Wayne Callies como Lori Grimes, a esposa de Rick.</li>
+            <li>Chandler Riggs como Carl Grimes, o filho de Rick e Lori, que cresce durante a série.</li>
+            <li>Melissa McBride como Carol Peletier, uma personagem que passa por uma enorme transformação ao longo da história.</li>
+        </ul>
+
+        <h3><strong>Inspiração e Temas</strong></h3>
+        <p>A série explora temas como sobrevivência, moralidade, perda e o que significa ser parte de uma comunidade. Os zumbis servem como uma metáfora para as ameaças que os humanos enfrentam, tanto externas quanto internas. O show destaca a luta pela sobrevivência em um mundo em colapso e as complexidades das relações humanas em situações extremas.</p>
+        <p>The Walking Dead foi pioneira em criar uma narrativa emocional em meio ao terror, e seu impacto na cultura pop foi significativo, gerando várias temporadas, spin-offs e uma base de fãs dedicada.</p>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Meu Site. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

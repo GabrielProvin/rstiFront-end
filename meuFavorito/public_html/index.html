@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f5;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box; 
+            background-image: url('imagens/imagem10.png');
+            background-size: cover; 
+            background-position: center; 
+        }
+        
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .titulo-principal {
+            color: white;
+            font-size: 2em;
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #444;
+            cursor: pointer;
+        }
+
+        section {
+            padding: 10px;
+            margin: 10px auto;
+            width: 80%;
+            max-width: 800px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #sobre {
+            background-color: whitesmoke;
+            color: white;
+        }
+
+        h2 {
+            color: #555;
+            font-size: 1.6em;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            color: black;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+
+        ul {
+            list-style-type: inherit;
+            padding-left: 20px;
+        }
+
+        li {
+            padding: 5px 0;
+        }
+
+        form {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input, textarea, option {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 0.9em;
+            margin-top: 20px;
+        }
+
+        header img {
+            width: 100%; 
+            max-width: 200px; 
+            border-radius: 15%;
+            margin: 0 auto;
+        }
+
+        .main-content {
+            margin: 0 auto;
+            width: 70%;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .imagemPrincipal {
+            width: 100%; 
+            height: auto;
+            margin: 0 auto;
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin: 20px;
+        }
+
+       
+        @media screen and (max-width: 768px) {
+            .titulo-principal {
+                font-size: 1.5em; 
+            }
+
+            header {
+                padding: 15px;
+            }
+
+            nav ul {
+                flex-direction: column; 
+                align-items: center; 
+            }
+
+            nav ul li {
+                margin: 5px 0;
+            }
+
+            .main-content {
+                width: 90%; 
+                padding: 10px;
+            }
+
+            footer {
+                font-size: 0.8em; 
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="imagens/imagem5.jpg" alt="Logo">
+        <h1 class="titulo">The Walking Dead</h1>
+        <nav>
+            <ul class="menu-navegacao">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="biografia.html">Biografia</a></li>
+                <li><a href="trabalhos.html">Trabalhos Famosos</a></li>
+                <li><a href="curiosidades.html">Curiosidades</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-content">
+        <img src="imagens/imagem6.jpg" class="imagemPrincipal" alt="Imagem Principal">
+        <h2>Conteúdo Principal</h2>
+        <p>"The Walking Dead" é uma aclamada série de televisão baseada na famosa série de quadrinhos de Robert Kirkman, Tony Moore e Charlie Adlard. Lançada em 2010, a série se passa em um mundo pós-apocalíptico dominado por zumbis, conhecidos como "walkers". Ela acompanha um grupo de sobreviventes liderado pelo ex-deputado sheriff Rick Grimes, que luta não apenas contra os mortos-vivos, mas também contra outros humanos em busca de recursos e segurança.
+        Ao longo de suas temporadas, "The Walking Dead" explora temas profundos como a sobrevivência, a moralidade, a perda e a luta pelo poder em tempos de crise. Com personagens complexos e enredos emocionantes, a série conquistou uma base de fãs apaixonada e deixou uma marca significativa na cultura pop, gerando spin-offs e uma vasta gama de produtos relacionados. A produção é conhecida por suas intensas cenas de ação, efeitos especiais impressionantes e um desenvolvimento de personagens que mantém os espectadores investidos em suas jornadas.</p>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Meu Site. Todos os direitos reservados.</p>
+    </div>
+
+</body>
+</html>
+

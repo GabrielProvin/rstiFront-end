@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--link-->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+           
+            body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f5;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box; 
+            background-image: url('imagens/imagem10.png');
+            background-size: cover; 
+            background-position: center; 
+        }
+        
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .titulo-principal {
+            color: white;
+            font-size: 2em;
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #444;
+            cursor: pointer;
+        }
+
+        section {
+            padding: 10px;
+            margin: 10px auto;
+            width: 80%;
+            max-width: 800px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #sobre {
+            background-color: whitesmoke;
+            color: white;
+        }
+
+        h2 {
+            color: #555;
+            font-size: 1.6em;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            color: black;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+
+        ul {
+            list-style-type: inherit;
+            padding-left: 20px;
+        }
+
+        li {
+            padding: 5px 0;
+        }
+
+        form {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input, textarea, option {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 0.9em;
+            margin-top: 20px;
+        }
+
+        header img {
+            width: 100%; 
+            max-width: 200px; 
+            border-radius: 15%;
+            margin: 0 auto;
+        }
+
+        .main-content {
+            margin: 0 auto;
+            width: 70%;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .imagemPrincipal {
+            width: 100%; 
+            height: auto;
+            margin: 0 auto;
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin: 20px;
+        }
+
+       
+        @media screen and (max-width: 768px) {
+            .titulo-principal {
+                font-size: 1.5em; 
+            }
+
+            header {
+                padding: 15px;
+            }
+
+            nav ul {
+                flex-direction: column; 
+                align-items: center; 
+            }
+
+            nav ul li {
+                margin: 5px 0;
+            }
+
+            .main-content {
+                width: 90%; 
+                padding: 10px;
+            }
+
+            footer {
+                font-size: 0.8em; 
+            }
+        }
+        .textoInicial{
+            color: white;
+        }
+        </style>
+    </head>
+    
+    
+    <body>
+         
+        
+        <!-- 1 -->
+    <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Meu Site</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#sobre">Serviços</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#servicos">Obras</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contato">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+        <h1>Hercio Neto</h1>
+        <p class="textoInicial">O pedreiro é o profissional essencial na execução de diversas etapas de uma obra, desde a fundação até o acabamento. Com habilidades em alvenaria, revestimentos, construção de estruturas e muito mais, ele transforma projetos arquitetônicos em realidade. Seu trabalho envolve precisão, conhecimento técnico e uma visão detalhada, garantindo a segurança e a qualidade da construção.</p>
+        <section class="depoimento">    
+            <p>"Construir não é apenas levantar paredes; é dar vida ao sonho de cada cliente."</p>
+    </section>
+
+    </header>
+
+   
+        
+    <
+    <section class="imagem">
+        <img src="pedreiro.jpg" alt="hercio Neto" />
+    </section>
+
+ 
+    <section class="chamadas">
+        <h2>Explore mais sobre nosso trabalho</h2>
+        <ul>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#obras-executadas">Obras Executadas</a></li>
+        </ul>
+    </section>
+
+   
+    <footer>
+        <p>&copy; 2024. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
